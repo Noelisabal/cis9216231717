@@ -1,2 +1,5 @@
-# cis9216231717
-repo for cis 92 class
+# My CIS 92 project 
+
+This is the start of my project
+
+Jose Hernandez
