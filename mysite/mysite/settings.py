@@ -74,13 +74,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
 # Database
+#using postgres db
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        DB_NAME: os.environ['DB_NAME'],
+        DB_USER: os.environ['DB_USER'],
+        DB_PASSWORD: os.environ['DB_PASSWORD'],
+        DB_HOST: os.environ['DB_HOST'],
+    },
 }
 
 
